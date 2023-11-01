@@ -1,0 +1,10 @@
+I would say, it’s not really required to learn spring but as you work along with springboot try and understand the inner details like:
+
+How does dependency injection work? What’s application context?
+Where are all the beans stored? What are various strategies to create beans?
+How various annotations handle things internally and what are the conditions they are supposed to work? 
+When can @Autowire fail? How does @Transactional work?
+How is the app running with minimum configuration?
+Where are the application servers upon which the app is running?
+In order to learn these details you don’t necessarily have to step back and dive into Spring first. It’s just fine to go along with much easier springboot and pick things one by one.
+
