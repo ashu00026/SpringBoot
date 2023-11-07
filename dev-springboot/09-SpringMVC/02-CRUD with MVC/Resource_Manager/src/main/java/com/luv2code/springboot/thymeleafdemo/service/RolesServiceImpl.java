@@ -26,8 +26,12 @@ public class RolesServiceImpl implements RolesService{
         Role role=new Role();
         role.setUserId(theMember.getUserName());
         role.setRole("ROLE_EMPLOYEE");
-        role.setRole("ROLE_MANAGER");
         rolesRepository.save(role);
+        Role role2=new Role();
+        role2.setId(0);
+        role2.setUserId(theMember.getUserName());
+        role2.setRole("ROLE_MANAGER");
+        rolesRepository.save(role2);
     }
     @Override
     public void saveRole(MemberForm theMember) {

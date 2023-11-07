@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html  xmlns:th="http://www.thymeleaf.org">
 <head>
-  <title>Login Page</title>
+  <title>Login</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Login</title>
@@ -120,7 +120,38 @@
               text-decoration: none;
           }
 
+          .password-container{
+          display: flex;
+          width: 100%;
+          flex-direction: row;
+          align-items: center;
+          justify-content: end;
+          }
+
+          .password-container input{
+          width: 100%;
+          }
+
+          #password{
+          flex: 15;
+          }
+
+          #showPassword{
+          cursor:pointer;
+<!--          margin-right-->
+          width:50%;
+          height:50%;
+          flex: 1;
+          }
+
+          #usernameinput{
+<!--          width:85%;-->
+          margin-right: 20px;
+          }
+
   </style>
+
+
 </head>
 
 <body>
@@ -131,10 +162,27 @@
       <form action="#" class="input-container" th:action="@{/authenticateUser}" method="POST">
         <div th:if="${param.error}" class="alert-container-form error" >Invalid username and password.</div>
         <div th:if="${param.logout}" class="alert-container-form success" >You Have been Logged out.</div>
+        <div class="password-container" >
+          <input type="text" name="username" id="usernameinput" class="input-field" placeholder="Enter your name..." style="margin-right: 20px;">
+        </div>
+        <div class="password-container">
+          <input type="password" id="password" name="password"  class="input-field" placeholder="Enter your password...">
+<!--          <input type="checkbox" id="showPassword" value="Show Password">-->
+          <span id="showPassword" >👁</span>
 
-        <input type="text" name="username" class="input-field" placeholder="Enter your name...">
-        <input type="text"  name="password"  class="input-field" placeholder="Enter your password...">
+        </div>
+        <script>
+        const passwordInput = document.getElementById("password");
+        const showPasswordCheckbox = document.getElementById("showPassword");
 
+        showPasswordCheckbox.addEventListener("click", function () {
+            if (passwordInput.type === "text") {
+                passwordInput.type = "password"; // Change input type to "text" to show the password
+            } else {
+                passwordInput.type ="text"; // Change input type back to "password" to hide the password
+            }
+        });
+    </script>
         <div class="btn-container">
           <button type="submit"  class="login-btn">Sign In</button>
           <p>Don't have an account? <a th:href="@{/registerUser}" href="#" class="form-atag">Sign Up</a> </p>

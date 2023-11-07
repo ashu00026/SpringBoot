@@ -31,7 +31,7 @@ public class ResourceController {
 		// add to the spring model
 		theModel.addAttribute("resources", theResources);
 
-		return "employees/list-employees";
+		return "resourcesTemplates/list-resources";
 	}
 
 	@GetMapping("/showFormForAdd")
@@ -39,7 +39,7 @@ public class ResourceController {
 
 		theModel.addAttribute("resources",new Resource());
 
-		return "employees/registerEmployeeForm";
+		return "resourcesTemplates/registerResourcesForm";
 	}
 
 	@PostMapping("/processForm")
@@ -52,7 +52,7 @@ public class ResourceController {
 	public String showFormForUpdate(@RequestParam("resourceId")int theId,Model theModel){
 		Resource theResource= resourceService.findById(theId);
 		theModel.addAttribute("resources",theResource);
-		return "employees/registerEmployeeForm";
+		return "resourcesTemplates/registerResourcesForm";
 	}
 	@GetMapping("/delete")
 	public String delete(@RequestParam("resourceId")int theId){
