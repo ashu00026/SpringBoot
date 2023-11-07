@@ -3,6 +3,10 @@ package com.luv2code.springboot.thymeleafdemo.service;
 import java.util.List;
 import java.util.Optional;
 
+import com.luv2code.springboot.thymeleafdemo.dao.MembersRepository;
+import com.luv2code.springboot.thymeleafdemo.dao.RolesRepository;
+import com.luv2code.springboot.thymeleafdemo.entity.Members;
+import com.luv2code.springboot.thymeleafdemo.entity.Roles;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -13,11 +17,28 @@ import com.luv2code.springboot.thymeleafdemo.entity.Employee;
 public class EmployeeServiceImpl implements EmployeeService {
 
 	private EmployeeRepository employeeRepository;
+
+	private RolesRepository rolesRepository;
+
+	private MembersRepository memberRepository;
 	
 	@Autowired
-	public EmployeeServiceImpl(EmployeeRepository theEmployeeRepository) {
-		employeeRepository = theEmployeeRepository;
+	public EmployeeServiceImpl(EmployeeRepository theEmployeeRepository, RolesRepository theRolesRepository,
+							   MembersRepository theMemberRepository) {
+		this.employeeRepository = theEmployeeRepository;
+		this.rolesRepository=theRolesRepository;
+		this.memberRepository=theMemberRepository;
 	}
+	@Override
+	public List<Employee> findByUserId(String userName){
+		return employeeRepository.findByFirstName(userName);
+	}
+
+
+	public List<Roles>findByRole(String userName){
+		return rolesRepository.findByRole(userName);
+	}
+
 	
 	@Override
 	public List<Employee> findAll() {
@@ -51,6 +72,10 @@ public class EmployeeServiceImpl implements EmployeeService {
 		employeeRepository.deleteById(theId);
 	}
 
+	@Override
+	public List<Members> findByUserName(String userName) {
+		return memberRepository.findByUserId(userName);
+	}
 }
 
 

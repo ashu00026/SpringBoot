@@ -1,0 +1,176 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<!--    <link rel="stylesheet" type="text/css" media="all" href="/Css/style.css" th:href="@{/Css/style.css}">-->
+    <title>Add Employee</title>
+    <style>
+*{
+    /* border: 1px solid red; */
+    overflow: hidden;
+}
+.background{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+.container-emp-form{
+    width: 100%;
+    height: 100%;
+    left: 6.5%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 100px;
+}
+
+.header-title{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    transform: scale(1.7,1.7);
+}
+
+.employee-register-form{
+    width: 90%;
+    height: fit-content;
+    border: 0.5px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+    background: linear-gradient(to top left, #ffffff,#ffffff33);
+    backdrop-filter: blur(8px);
+    border: 2px solid balck;
+    box-shadow: 0px -25px 20px -20px rgba(0, 0, 0, 0.45), 25px 0px 20px -20px rgba(0,0,0,0.45), 0px 25px 20px -20px rgba(0,0,0,0.45),-25px 0px 20px -20px rgba(0,0,0,0.45);
+}
+
+.form-type-header-emp{
+    font-weight: 400;
+    font-size: x-large;
+}
+
+.input-container-emp{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 30px;
+}
+
+.name-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.name-input-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+    gap: 5px;
+}
+
+.name-input-container input{
+    width: 80%;
+    padding: 7px;
+    border-radius: 5px;
+}
+.name-input-container input:focus {
+    outline: none;
+    border: none;
+    box-shadow: 0 0 0 3px hsla(193, 61%, 53%, 0.8);
+}
+
+.btn-container-emp{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 30px;
+    width: 100%;
+}
+
+.save-btn{
+    border: none;
+    width: 10%;
+    padding: 7px 10px;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(26, 91, 148);
+}
+
+.save-btn:hover{
+    background-color: rgb(34, 124, 202);
+}
+
+</style>
+</head>
+
+
+
+<body>
+<div class="background">
+    <div class="container-emp-form">
+        <div class="header-title">
+            <h3>ResourceHub</h3>
+        </div>
+        <div class="employee-register-form">
+            <p class="form-type-header-emp">Fill the Resource details</p>
+            <form action="" class="input-container-emp" th:action="@{/resources/processForm}" th:object="${resources}" method="POST">
+                <input type="hidden" th:field="*{id}"/>
+                <div class="name-container">
+                    <div class="name-input-container">
+                        <label for="fName">Enter the Subject Name</label>
+                        <input type="text" th:field="*{subject}" id="fName" class="input-field-emp" placeholder="Enter the Subject Name...">
+                    </div>
+                    <div class="name-input-container">
+                        <label for="lName">Enter the Documented Link</label>
+                        <input type="text" th:field="*{documentation}"  id="lName" class="input-field-emp" placeholder="Enter the Documented Link...">
+                    </div>
+                </div>
+                <div class="name-container">
+                    <div class="email-container name-input-container">
+                        <label for="github">Enter the Github Link</label>
+                        <input type="text" th:field="*{github}" id="github" class="input-field-emp" placeholder="Enter the Github Link...">
+                    </div>
+                    <div class="email-container name-input-container">
+                        <label for="drive">Enter the Drive Link</label>
+                        <input type="text" th:field="*{drive}" id="drive" class="input-field-emp" placeholder="Enter the Drive Link...">
+                    </div>
+                </div>
+
+
+                <div class="btn-container-emp">
+                    <button class="save-btn">Save</button>
+                    <p>Back to <a th:href="@{/resources/list}" href="#" class="form-atag">Resources</a> </p>
+                </div>
+
+
+            </form>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

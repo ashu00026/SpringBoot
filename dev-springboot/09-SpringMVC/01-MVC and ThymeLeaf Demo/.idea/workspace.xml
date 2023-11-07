@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ade55f38-636e-4c1c-a802-337162c59a76" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../02-CRUD with MVC/01-thymeleaf-demo-employees-starter-list/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02-CRUD with MVC/01-thymeleaf-demo-employees-starter-list/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../02-CRUD with MVC/01-thymeleaf-demo-employees-starter-list/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02-CRUD with MVC/01-thymeleaf-demo-employees-starter-list/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../02-CRUD with MVC/01-thymeleaf-demo-employees-starter-list/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02-CRUD with MVC/01-thymeleaf-demo-employees-starter-list/src/main/java/com/luv2code/springboot/thymeleafdemo/dao/EmployeeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../02-CRUD with MVC/01-thymeleaf-demo-employees-starter-list/src/main/java/com/luv2code/springboot/thymeleafdemo/dao/EmployeeRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02-CRUD with MVC/01-thymeleaf-demo-employees-starter-list/src/main/java/com/luv2code/springboot/thymeleafdemo/service/EmployeeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../02-CRUD with MVC/01-thymeleaf-demo-employees-starter-list/src/main/java/com/luv2code/springboot/thymeleafdemo/service/EmployeeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02-CRUD with MVC/01-thymeleaf-demo-employees-starter-list/src/main/java/com/luv2code/springboot/thymeleafdemo/service/EmployeeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../02-CRUD with MVC/01-thymeleaf-demo-employees-starter-list/src/main/java/com/luv2code/springboot/thymeleafdemo/service/EmployeeServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02-CRUD with MVC/01-thymeleaf-demo-employees-starter-list/target/classes/com/luv2code/springboot/thymeleafdemo/dao/EmployeeRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/../02-CRUD with MVC/01-thymeleaf-demo-employees-starter-list/target/classes/com/luv2code/springboot/thymeleafdemo/dao/EmployeeRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02-CRUD with MVC/01-thymeleaf-demo-employees-starter-list/target/classes/com/luv2code/springboot/thymeleafdemo/service/EmployeeService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../02-CRUD with MVC/01-thymeleaf-demo-employees-starter-list/target/classes/com/luv2code/springboot/thymeleafdemo/service/EmployeeService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02-CRUD with MVC/01-thymeleaf-demo-employees-starter-list/target/classes/com/luv2code/springboot/thymeleafdemo/service/EmployeeServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../02-CRUD with MVC/01-thymeleaf-demo-employees-starter-list/target/classes/com/luv2code/springboot/thymeleafdemo/service/EmployeeServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../spring security/Security/section10/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../spring security/Security/section10/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../spring security/Security/section10/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../spring security/Security/section10/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../spring security/Security/section10/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../spring security/Security/section10/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../spring security/Security/section10/src/main/java/com/company/Config/EasyBankUsernamePwdAuthenticationProvider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../spring security/Security/section10/src/main/java/com/company/Config/ProjectSecurityConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../spring security/Security/section10/src/main/java/com/company/Constants/ApplicationConstants.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../spring security/Security/section10/src/main/java/com/company/Constants/SecurityConstants.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../spring security/Security/section10/src/main/java/com/company/Controller/AccountController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../spring security/Security/section10/src/main/java/com/company/Controller/BalanceController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../spring security/Security/section10/src/main/java/com/company/Controller/CardsController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../spring security/Security/section10/src/main/java/com/company/Controller/ContactController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../spring security/Security/section10/src/main/java/com/company/Controller/LoansController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../spring security/Security/section10/src/main/java/com/company/Controller/LoginController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../spring security/Security/section10/src/main/java/com/company/Controller/NoticesController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../spring security/Security/section10/src/main/java/com/company/EasybankBackendApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../spring security/Security/section10/src/main/java/com/company/Filter/AuthoritiesLoggingAfterFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../spring security/Security/section10/src/main/java/com/company/Filter/AuthoritiesLoggingAtFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../spring security/Security/section10/src/main/java/com/company/Filter/CsrfCookieFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../spring security/Security/section10/src/main/java/com/company/Filter/JWTTokenGeneratorFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../spring security/Security/section10/src/main/java/com/company/Filter/JWTTokenValidatorFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../spring security/Security/section10/src/main/java/com/company/Filter/RequestValidationBeforeFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../spring security/Security/section10/src/main/java/com/company/Model/AccountTransactions.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../spring security/Security/section10/src/main/java/com/company/Model/Accounts.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../spring security/Security/section10/src/main/java/com/company/Model/Authority.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../spring security/Security/section10/src/main/java/com/company/Model/Cards.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../spring security/Security/section10/src/main/java/com/company/Model/Contact.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../spring security/Security/section10/src/main/java/com/company/Model/Customer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../spring security/Security/section10/src/main/java/com/company/Model/Loans.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../spring security/Security/section10/src/main/java/com/company/Model/Notice.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../spring security/Security/section10/src/main/java/com/company/Respository/AccountTransactionsRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../spring security/Security/section10/src/main/java/com/company/Respository/AccountsRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../spring security/Security/section10/src/main/java/com/company/Respository/CardsRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../spring security/Security/section10/src/main/java/com/company/Respository/ContactRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../spring security/Security/section10/src/main/java/com/company/Respository/CustomerRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../spring security/Security/section10/src/main/java/com/company/Respository/LoanRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../spring security/Security/section10/src/main/java/com/company/Respository/NoticeRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../spring security/Security/section10/src/main/java/com/company/Service/CustomerService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../spring security/Security/section10/src/main/java/com/company/Service/CustomerServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../spring security/Security/section10/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../spring security/Security/section10/src/main/resources/sql/scripts.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../spring security/Security/section10/src/test/java/com/company/EasybankBackendApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../spring security/springsecurity6" beforeDir="false" afterPath="$PROJECT_DIR$/../../../spring security/springsecurity6" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectId" id="2XgCF1UbYW3BxgWFiqdxPoJXcIN" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/ashutosh/Desktop/springboot/dev-springboot/09-SpringMVC/01-MVC and ThymeLeaf Demo"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ade55f38-636e-4c1c-a802-337162c59a76" name="Changes" comment="" />
+      <created>1699041228980</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1699041228980</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
